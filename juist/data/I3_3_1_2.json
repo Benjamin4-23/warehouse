@@ -1,0 +1,211 @@
+{
+    "loadingduration": 5,
+    "vehiclespeed": 1,
+    "stackcapacity": 10,
+    "stacks": [
+      {
+        "ID": 0,
+        "boxes": [
+          "B5",
+          "B6",
+          "B7",
+          "B8",
+          "B9"
+        ],
+        "name": "stack0_1",
+        "x": 110,
+        "y": 100
+      },
+      {
+        "ID": 1,
+        "boxes": [
+          "B10",
+          "B11",
+          "B12",
+          "B13",
+          "B14"
+        ],
+        "name": "stack0_2",
+        "x": 120,
+        "y": 100
+      },
+      {
+        "ID": 2,
+        "boxes": [
+          "B15",
+          "B16",
+          "B17",
+          "B18",
+          "B19"
+        ],
+        "name": "stack0_3",
+        "x": 130,
+        "y": 100
+      },
+      {
+        "ID": 3,
+        "boxes": [
+          "B20",
+          "B21",
+          "B22",
+          "B23",
+          "B25",
+          "B26",
+          "B27",
+          "B28",
+          "B29",
+          "b30"
+        ],
+        "name": "stack0_4",
+        "x": 140,
+        "y": 100
+      },
+      {
+        "ID": 4,
+        "boxes": [
+          "B31",
+          "B32",
+          "B33",
+          "B34",
+          "B35",
+          "B36",
+          "B37",
+          "B38",
+          "B39",
+          "B40"
+        ],
+        "name": "stack0_5",
+        "x": 150,
+        "y": 100
+      }
+    ],
+    "bufferpoints": [
+      {
+        "ID": 0,
+        "name": "BufferPoint",
+        "x": 0,
+        "y": 100
+      }
+    ],
+    "vehicles": [
+      {
+        "ID": 0,
+        "name": "Vehicle0",
+        "capacity": 3,
+        "xCoordinate": 100,
+        "yCoordinate": 100
+      },
+      {
+        "ID": 1,
+        "name": "Vehicle1",
+        "capacity": 3,
+        "xCoordinate":110,
+        "yCoordinate": 100
+      }
+    ],
+    "requests": [
+      {
+        "ID": 8,
+        "pickupLocation": [
+        "stack0_1"
+        ],
+        "placeLocation": [
+        "BufferPoint"
+        ],
+        "boxID": "B8"
+      },
+      {
+          "ID": 9,
+          "pickupLocation": [
+          "stack0_1"
+          ],
+          "placeLocation": [
+          "BufferPoint"
+          ],
+          "boxID": "B9"
+      },
+      {
+        "ID": 14,
+        "pickupLocation": [
+          "stack0_2"
+        ],
+        "placeLocation": [
+          "BufferPoint"
+        ],
+        "boxID": "B14"
+      },
+
+
+
+
+
+
+
+
+        {
+          "ID": 11,
+          "pickupLocation": [
+          "stack0_2"
+          ],
+          "placeLocation": [
+          "BufferPoint"
+          ],
+          "boxID": "B10"
+      },
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {
+            "ID": 42,
+            "pickupLocation": [
+                "BufferPoint"
+            ],
+            "placeLocation": [
+                "stack0_4"
+            ],
+            "boxID": "B42"
+        },
+        {
+          "ID": 43,
+          "pickupLocation": [
+              "BufferPoint"
+          ],
+          "placeLocation": [
+              "stack0_4"
+          ],
+          "boxID": "B43"
+        },
+        {
+          "ID": 44,
+          "pickupLocation": [
+              "BufferPoint"
+          ],
+          "placeLocation": [
+              "stack0_4"
+          ],
+          "boxID": "B44"
+        },
+        {
+            "ID": 45,
+            "pickupLocation": [
+                "BufferPoint"
+            ],
+            "placeLocation": [
+                "stack0_5"
+            ],
+            "boxID": "B45"
+        }
+    ]
+  }

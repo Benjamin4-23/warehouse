@@ -1,0 +1,399 @@
+{
+"loadingduration": 5,
+"vehiclespeed": 1,
+"stackcapacity": 8,
+"stacks": [
+{
+"ID": 0,
+"boxes": [
+"B0",
+"B1",
+"B2",
+"B3"
+],
+"name": "stack0_1",
+"x": 110,
+"y": 100
+},
+{
+"ID": 1,
+"boxes": [
+"B4",
+"B5",
+"B6",
+"B7"
+],
+"name": "stack0_2",
+"x": 120,
+"y": 100
+},
+{
+"ID": 2,
+"boxes": [
+"B8",
+"B9",
+"B10",
+"B11"
+],
+"name": "stack0_3",
+"x": 130,
+"y": 100
+},
+{
+"ID": 3,
+"boxes": [
+"B12",
+"B13",
+"B14",
+"B15"
+],
+"name": "stack0_4",
+"x": 140,
+"y": 100
+},
+{
+"ID": 4,
+"boxes": [
+"B16",
+"B17",
+"B18",
+"B19"
+],
+"name": "stack0_5",
+"x": 150,
+"y": 100
+},
+{
+"ID": 5,
+"boxes": [
+"B20",
+"B21",
+"B22",
+"B23"
+],
+"name": "stack0_6",
+"x": 160,
+"y": 100
+},
+{
+"ID": 6,
+"boxes": [
+"B24",
+"B25",
+"B26",
+"B27"
+],
+"name": "stack0_7",
+"x": 170,
+"y": 100
+},
+{
+"ID": 7,
+"boxes": [
+"B28",
+"B29",
+"B30",
+"B31"
+],
+"name": "stack0_8",
+"x": 180,
+"y": 100
+},
+{
+"ID": 8,
+"boxes": [
+"B32",
+"B33",
+"B34",
+"B35"
+],
+"name": "stack0_9",
+"x": 190,
+"y": 100
+},
+{
+"ID": 9,
+"boxes": [
+"B36",
+"B37",
+"B38",
+"B39"
+],
+"name": "stack0_10",
+"x": 200,
+"y": 100
+},
+{
+"ID": 10,
+"boxes": [
+"B40",
+"B41",
+"B42",
+"B43"
+],
+"name": "stack0_11",
+"x": 210,
+"y": 100
+},
+{
+"ID": 11,
+"boxes": [
+"B44",
+"B45",
+"B46",
+"B47"
+],
+"name": "stack0_12",
+"x": 220,
+"y": 100
+},
+{
+"ID": 12,
+"boxes": [
+"B48",
+"B49",
+"B50",
+"B51"
+],
+"name": "stack0_13",
+"x": 230,
+"y": 100
+},
+{
+"ID": 13,
+"boxes": [
+"B52",
+"B53",
+"B54",
+"B55"
+],
+"name": "stack0_14",
+"x": 240,
+"y": 100
+},
+{
+"ID": 14,
+"boxes": [
+"B56",
+"B57",
+"B58",
+"B59"
+],
+"name": "stack0_15",
+"x": 250,
+"y": 100
+},
+{
+"ID": 15,
+"boxes": [
+"B60",
+"B61",
+"B62",
+"B63"
+],
+"name": "stack0_16",
+"x": 260,
+"y": 100
+},
+{
+"ID": 16,
+"boxes": [
+"B64",
+"B65",
+"B66",
+"B67"
+],
+"name": "stack0_17",
+"x": 270,
+"y": 100
+},
+{
+"ID": 17,
+"boxes": [
+"B68",
+"B69",
+"B70",
+"B71"
+],
+"name": "stack0_18",
+"x": 280,
+"y": 100
+},
+{
+"ID": 18,
+"boxes": [
+"B72",
+"B73",
+"B74",
+"B75"
+],
+"name": "stack0_19",
+"x": 290,
+"y": 100
+},
+{
+"ID": 19,
+"boxes": [
+"B76",
+"B77",
+"B78",
+"B79"
+],
+"name": "stack0_20",
+"x": 300,
+"y": 100
+}
+],
+"bufferpoints": [
+{
+"ID": 0,
+"name": "BufferPoint0",
+"x": 0,
+"y": 100
+},
+{
+"ID": 1,
+"name": "BufferPoint1",
+"x": 10,
+"y": 100
+}
+],
+"vehicles": [
+{
+"ID": 0,
+"name": "Vehicle0",
+"capacity": 2,
+"x": 20,
+"y": 100
+},
+{
+"ID": 1,
+"name": "Vehicle1",
+"capacity": 2,
+"x": 30,
+"y": 100
+}
+],
+"requests": [
+{
+"ID": 0,
+"pickupLocation": "stack0_13",
+"placeLocation": "BufferPoint0",
+"boxID": "B49"
+},
+{
+"ID": 1,
+"pickupLocation": "stack0_18",
+"placeLocation": "BufferPoint0",
+"boxID": "B71"
+},
+{
+"ID": 2,
+"pickupLocation": "stack0_3",
+"placeLocation": "BufferPoint1",
+"boxID": "B8"
+},
+{
+"ID": 3,
+"pickupLocation": "stack0_14",
+"placeLocation": "BufferPoint1",
+"boxID": "B53"
+},
+{
+"ID": 4,
+"pickupLocation": "stack0_2",
+"placeLocation": "BufferPoint0",
+"boxID": "B4"
+},
+{
+"ID": 5,
+"pickupLocation": "stack0_12",
+"placeLocation": "BufferPoint0",
+"boxID": "B44"
+},
+{
+"ID": 6,
+"pickupLocation": "stack0_8",
+"placeLocation": "BufferPoint0",
+"boxID": "B30"
+},
+{
+"ID": 7,
+"pickupLocation": "stack0_12",
+"placeLocation": "BufferPoint0",
+"boxID": "B47"
+},
+{
+"ID": 8,
+"pickupLocation": "stack0_11",
+"placeLocation": "BufferPoint1",
+"boxID": "B41"
+},
+{
+"ID": 9,
+"pickupLocation": "stack0_20",
+"placeLocation": "BufferPoint1",
+"boxID": "B77"
+},
+{
+"ID": 10,
+"pickupLocation": "BufferPoint0",
+"placeLocation": "stack0_18",
+"boxID": "B80"
+},
+{
+"ID": 11,
+"pickupLocation": "BufferPoint1",
+"placeLocation": "stack0_11",
+"boxID": "B81"
+},
+{
+"ID": 12,
+"pickupLocation": "BufferPoint0",
+"placeLocation": "stack0_17",
+"boxID": "B82"
+},
+{
+"ID": 13,
+"pickupLocation": "BufferPoint1",
+"placeLocation": "stack0_11",
+"boxID": "B83"
+},
+{
+"ID": 14,
+"pickupLocation": "BufferPoint1",
+"placeLocation": "stack0_14",
+"boxID": "B84"
+},
+{
+"ID": 15,
+"pickupLocation": "BufferPoint1",
+"placeLocation": "stack0_14",
+"boxID": "B85"
+},
+{
+"ID": 16,
+"pickupLocation": "BufferPoint0",
+"placeLocation": "stack0_12",
+"boxID": "B86"
+},
+{
+"ID": 17,
+"pickupLocation": "BufferPoint0",
+"placeLocation": "stack0_2",
+"boxID": "B87"
+},
+{
+"ID": 18,
+"pickupLocation": "BufferPoint1",
+"placeLocation": "stack0_18",
+"boxID": "B88"
+},
+{
+"ID": 19,
+"pickupLocation": "BufferPoint1",
+"placeLocation": "stack0_6",
+"boxID": "B89"
+}
+]
+}

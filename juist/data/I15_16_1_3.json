@@ -1,0 +1,382 @@
+{
+  "loadingduration": 5,
+  "vehiclespeed": 1,
+  "stackcapacity": 10,
+  "stacks": [
+    {
+      "ID": 0,
+      "boxes": [
+        "B5",
+        "B6",
+        "B7",
+        "B8",
+        "B9"
+      ],
+      "name": "stack0_1",
+      "x": 110,
+      "y": 100
+    },
+    {
+      "ID": 1,
+      "boxes": [
+        "B10",
+        "B11",
+        "B12",
+        "B13",
+        "B14"
+      ],
+      "name": "stack0_2",
+      "x": 120,
+      "y": 100
+    },
+    {
+      "ID": 2,
+      "boxes": [
+        "B15",
+        "B16",
+        "B17",
+        "B18",
+        "B19"
+      ],
+      "name": "stack0_3",
+      "x": 130,
+      "y": 100
+    },
+    {
+      "ID": 3,
+      "boxes": [
+        "B20",
+        "B21",
+        "B22",
+        "B23",
+        "B24"
+      ],
+      "name": "stack0_4",
+      "x": 140,
+      "y": 100
+    },
+    {
+      "ID": 4,
+      "boxes": [
+        "B25",
+        "B26",
+        "B27",
+        "B28",
+        "B29"
+      ],
+      "name": "stack0_5",
+      "x": 150,
+      "y": 100
+    },
+    {
+      "ID": 5,
+      "boxes": [
+        "B30",
+        "B31",
+        "B32",
+        "B33",
+        "B34"
+      ],
+      "name": "stack0_6",
+      
+      "x": 160,
+      "y": 100
+    },
+    {
+      "ID": 6,
+      "boxes": [
+        "B35",
+        "B36",
+        "B37",
+        "B38",
+        "B39"
+      ],
+      "name": "stack0_7",
+      "x": 170,
+      "y": 100
+    },
+    {
+      "ID": 7,
+      "boxes": [
+        "B40",
+        "B41",
+        "B42",
+        "B43",
+        "B44"
+      ],
+      "name": "stack0_8",
+      "x": 180,
+      "y": 100
+    },
+    {
+      "ID": 8,
+      "boxes": [
+        "B45",
+        "B46",
+        "B47",
+        "B48",
+        "B49"
+      ],
+      "name": "stack0_9",
+      "x": 190,
+      "y": 100
+    },
+    {
+      "ID": 9,
+      "boxes": [
+        "B50",
+        "B51",
+        "B52",
+        "B53",
+        "B54"
+      ],
+      "name": "stack0_10",
+      "x": 200,
+      "y": 100
+    },
+    {
+      "ID": 10,
+      "boxes": [
+        "B55",
+        "B56",
+        "B57",
+        "B58",
+        "B59"
+      ],
+      "name": "stack0_11",
+      "x": 210,
+      "y": 100
+    },
+    {
+      "ID": 11,
+      "boxes": [
+        "B60",
+        "B61",
+        "B62",
+        "B63",
+        "B64"
+      ],
+      "name": "stack0_12",
+      "x": 220,
+      "y": 100
+    },
+    {
+      "ID": 12,
+      "boxes": [
+        "B65",
+        "B66",
+        "B67",
+        "B68",
+        "B69"
+      ],
+      "name": "stack0_13",
+      "x": 230,
+      "y": 100
+    },
+    {
+      "ID": 13,
+      "boxes": [
+        "B70",
+        "B71",
+        "B72",
+        "B73",
+        "B74"
+      ],
+      "name": "stack0_14",
+      "x": 240,
+      "y": 100
+    },
+    {
+      "ID": 14,
+      "boxes": [
+        "B75",
+        "B76",
+        "B77",
+        "B78",
+        "B79"
+      ],
+      "name": "stack0_15",
+      "x": 250,
+      "y": 100
+    }
+  ],
+  "bufferpoints": [
+    {
+      "ID": 0,
+      "name": "BufferPoint",
+      "x": 0,
+      "y": 100
+    }
+  ],
+  "vehicles": [
+    {
+      "ID": 0,
+      "name": "Vehicle0",
+      "capacity": 3,
+      "xCoordinate": 100,
+      "yCoordinate": 100
+    }
+  ],
+  "requests": [
+    {
+      "ID": 0,
+      "pickupLocation": [
+        "stack0_2"
+      ],
+      "placeLocation": [
+        "BufferPoint"
+      ],
+      "boxID": "B14"
+    },
+    {
+      "ID": 1,
+      "pickupLocation": [
+        "stack0_10"
+      ],
+      "placeLocation": [
+        "BufferPoint"
+      ],
+      "boxID": "B54"
+    },
+    {
+      "ID": 2,
+      "pickupLocation": [
+        "stack0_10"
+      ],
+      "placeLocation": [
+        "BufferPoint"
+      ],
+      "boxID": "B53"
+    },
+    {
+      "ID": 3,
+      "pickupLocation": [
+        "stack0_2"
+      ],
+      "placeLocation": [
+        "BufferPoint"
+      ],
+      "boxID": "B13"
+    },
+    {
+      "ID": 4,
+      "pickupLocation": [
+        "stack0_15"
+      ],
+      "placeLocation": [
+        "BufferPoint"
+      ],
+      "boxID": "B79"
+    },
+    {
+      "ID": 5,
+      "pickupLocation": [
+        "stack0_8"
+      ],
+      "placeLocation": [
+        "BufferPoint"
+      ],
+      "boxID": "B44"
+    },
+    {
+      "ID": 6,
+      "pickupLocation": [
+        "stack0_1"
+      ],
+      "placeLocation": [
+        "BufferPoint"
+      ],
+      "boxID": "B9"
+    },
+    {
+      "ID": 7,
+      "pickupLocation": [
+        "stack0_2"
+      ],
+      "placeLocation": [
+        "BufferPoint"
+      ],
+      "boxID": "B12"
+    },
+    {
+      "ID": 8,
+      "pickupLocation": [
+        "stack0_10"
+      ],
+      "placeLocation": [
+        "BufferPoint"
+      ],
+      "boxID": "B52"
+    },
+    {
+      "ID": 9,
+      "pickupLocation": [
+        "stack0_13"
+      ],
+      "placeLocation": [
+        "BufferPoint"
+      ],
+      "boxID": "B69"
+    },
+    {
+      "ID": 10,
+      "pickupLocation": [
+        "stack0_5"
+      ],
+      "placeLocation": [
+        "BufferPoint"
+      ],
+      "boxID": "B29"
+    },
+    {
+      "ID": 11,
+      "pickupLocation": [
+        "stack0_2"
+      ],
+      "placeLocation": [
+        "BufferPoint"
+      ],
+      "boxID": "B11"
+    },
+    {
+      "ID": 12,
+      "pickupLocation": [
+        "stack0_13"
+      ],
+      "placeLocation": [
+        "BufferPoint"
+      ],
+      "boxID": "B68"
+    },
+    {
+      "ID": 13,
+      "pickupLocation": [
+        "BufferPoint"
+      ],
+      "placeLocation": [
+        "stack0_11"
+      ],
+      "boxID": "B0"
+    },
+    {
+      "ID": 14,
+      "pickupLocation": [
+        "BufferPoint"
+      ],
+      "placeLocation": [
+        "stack0_11"
+      ],
+      "boxID": "B1"
+    },
+    {
+      "ID": 15,
+      "pickupLocation": [
+        "BufferPoint"
+      ],
+      "placeLocation": [
+        "stack0_13"
+      ],
+      "boxID": "B2"
+    }
+  ]
+}

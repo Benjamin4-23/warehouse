@@ -1,0 +1,101 @@
+{
+  "loadingduration": 5,
+  "vehiclespeed": 1,
+  "stackcapacity": 10,
+  "stacks": [
+    {
+      "ID": 1,
+      "boxes": [
+        "B0",
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "B8",
+        "B9"
+      ],
+      "name": "stack0_1",
+      "x": 100,
+      "y": 100
+    },
+    {
+      "ID": 2,
+      "boxes": [
+        "B10",
+        "B11",
+        "B12",
+        "B13",
+        "B14"
+      ],
+      "name": "stack0_2",
+      "x": 110,
+      "y": 100
+    }
+  ],
+  "bufferpoints": [
+    {
+      "ID": 0,
+      "name": "BufferPoint",
+      "x": 0,
+      "y": 100
+    },
+    {
+      "ID": 1,
+      "name": "BufferPoint2",
+      "x": 0,
+      "y": 110
+    }
+  ],
+  "vehicles": [
+    {
+      "ID": 0,
+      "name": "Vehicle0",
+      "capacity": 2,
+      "xCoordinate": 100,
+      "yCoordinate": 100
+    },
+    {
+      "ID": 1,
+      "name": "Vehicle1",
+      "capacity": 2,
+      "xCoordinate":110,
+      "yCoordinate": 100
+    }
+  ],
+  "requests": [
+    {
+      "ID": 80,
+      "pickupLocation": [
+      "stack0_1"
+      ],
+      "placeLocation": [
+      "BufferPoint"
+      ],
+      "boxID": "B9"
+    },
+    {
+      "ID": 81,
+      "pickupLocation": [
+      "stack0_1"
+      ],
+      "placeLocation": [
+      "BufferPoint"
+      ],
+      "boxID": "B8"
+    },
+    {
+      "ID": 82,
+      "pickupLocation": [
+      "stack0_1"
+      ],
+      "placeLocation": [
+      "BufferPoint"
+      ],
+      "boxID": "B7"
+    }
+    
+  ]
+}
