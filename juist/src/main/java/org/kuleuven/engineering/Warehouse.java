@@ -1,9 +1,6 @@
 package org.kuleuven.engineering;
 
-import java.io.File;
 import java.io.FileWriter;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -23,18 +20,18 @@ import org.kuleuven.engineering.types.Vehicle;
 
 
 public class Warehouse {
-    private final Graph graph;
-    private final List<Vehicle> vehicles;
-    private final List<Request> requests;
-    private final HashMap<Integer, Integer> stackIsUsedUntil;
-    private final List<Integer[]> activeRelocations = new ArrayList<>();
-    private final HashMap<Integer, Integer> waitForRequestFinish = new HashMap<>();
-    private final List<String> operationLog = new ArrayList<>();
     private double currentTime = 0;
     private final int loadingSpeed;
     private int round = 0;
     private long startingTime;
     private final boolean[] firstGetAnother;
+    private final Graph graph;
+    private final List<Vehicle> vehicles;
+    private final List<Request> requests;
+    private final HashMap<Integer, Integer> stackIsUsedUntil;
+    private final List<Integer[]> activeRelocations;
+    private final HashMap<Integer, Integer> waitForRequestFinish;
+    private final List<String> operationLog;
     private final List<List<Request>> requestsPerVehicleList;
     private final List<SchedulingStrategy> strategies;
     private final RequestDistribution requestDistributor;
@@ -45,7 +42,10 @@ public class Warehouse {
         this.vehicles = vehicles;
         this.requests = requests;
         this.loadingSpeed = loadingSpeed;
+        this.activeRelocations = new ArrayList<>();
         this.stackIsUsedUntil = new HashMap<>();
+        this.waitForRequestFinish = new HashMap<>();
+        this.operationLog = new ArrayList<>();
         for (GraphNode node : graph.getNodes()){
             if (node.getStorage() instanceof Stack stack){
                 stackIsUsedUntil.put(stack.getID(), -1);
@@ -67,8 +67,6 @@ public class Warehouse {
         strategies.add(new StackToBufferSchedulingStrategy(requestDistributor, requestHandler, this));
             
         strategies.add(new BufferToStackSchedulingStrategy(requestDistributor, requestHandler, this));
-
-
    }
 
     public void scheduleRequests() {
@@ -81,33 +79,13 @@ public class Warehouse {
             System.out.println(currentTime);
         }
     }
+    
     private void resetVehicleStackIDs() {
         for (Vehicle vehicle : vehicles){
             vehicle.resetStackIDs();
         }
     }
     
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-
-
-
     public List<GraphNode> findNStorage(int N, GraphNode src, GraphNode dest, REQUEST_STATUS status, Vehicle currentVehicle){
         if(N == 0) return null;
         
@@ -215,7 +193,6 @@ public class Warehouse {
         return nodes;
     }
 
-
     public HashMap<Integer, Integer> getStackIsUsedUntil() {
         return stackIsUsedUntil;
     }
@@ -259,13 +236,13 @@ public class Warehouse {
     public void addLogEntry(String vehicleName, Location startLocation, double startTime, Location endLocation, double endTime, String boxId, REQUEST_STATUS type){
         String operation = switch (type){
             case SRC -> "PU";
-            case SRC_RELOC -> "PL_RELOC";
+            case SRC_RELOC -> "PL"; // reloc
             case DEST -> "PL";
             case DEST_PU -> "PU";
-            case DEST_RELOC -> "PL_RELOC";
+            case DEST_RELOC -> "PL"; // reloc
             default -> "";
         };
-        System.out.println(vehicleName + ";" + startLocation.getX() + ";"+ startLocation.getY() + ";" + (int) startTime  + ";" + endLocation.getX() + ";" + endLocation.getY()   + ";" + (int)endTime + ";"+ boxId + ";" + operation);
+        // System.out.println(vehicleName + ";" + startLocation.getX() + ";"+ startLocation.getY() + ";" + (int) startTime  + ";" + endLocation.getX() + ";" + endLocation.getY()   + ";" + (int)endTime + ";"+ boxId + ";" + operation);
         operationLog.add(vehicleName + ";" + startLocation.getX() + ";"+ startLocation.getY() + ";" + (int) startTime  + ";" + endLocation.getX() + ";" + endLocation.getY()   + ";" + (int)endTime + ";"+ boxId + ";" + operation);
 
     }

@@ -45,6 +45,7 @@ public class Vehicle {
     public int getID(){
         return ID;
     }
+    
     public String getName(){
         return name;
     }
@@ -64,6 +65,7 @@ public class Vehicle {
     public int getCarriedBoxesCount(){
         return carriedBoxesCount;
     }
+    
     public int getCapacity(){
         return capacity;
     }
@@ -84,9 +86,11 @@ public class Vehicle {
     public void setUnavailableUntil(double time){
         this.unavailableUntil = time;
     }
+    
     public double getUnavailableUntil(){
         return unavailableUntil;
     }
+    
     // Getters and setters
     public boolean removeBox(String boxId){
         if (carriedBoxes.contains(boxId)){
@@ -95,6 +99,7 @@ public class Vehicle {
         }
         throw new RuntimeException("Box not found in vehicle at time of removal");
     }
+    
     public void addBox(String boxId){
         this.carriedBoxes.add(boxId);
         this.carriedBoxesCount++;
@@ -106,12 +111,14 @@ public class Vehicle {
     public boolean hasBox(String boxId){
         return carriedBoxes.contains(boxId);
     }
+    
     public String getLastBox(){
         if (carriedBoxes.isEmpty()){
             return null;
         }
         return carriedBoxes.get(carriedBoxes.size() - 1);
     }
+    
     public void resetStackIDs(){
         myStackIDs.clear();
     }
@@ -138,6 +145,7 @@ public class Vehicle {
     public List<Request> getRequests(){
         return requests;
     }
+    
     public boolean setNewOpenRequest( HashMap<Integer, Integer> unavailableStacks, double currentTime, int round, boolean doorFirstGetAnother){
         Request currentRequest = null;
         if (doorFirstGetAnother){
@@ -175,9 +183,11 @@ public class Vehicle {
     public List<Request> getOpenRequests(){
         return openRequests;
     }
+    
     public void addOpenRequest(Request request){
         this.openRequests.add(request);
     }
+    
     public void closeRequest(Request request){
         openRequests.remove(request);
         if (!openRequests.isEmpty()){
@@ -187,19 +197,24 @@ public class Vehicle {
             currentRequestID = -1;
         }
     }
+    
     public void closeRequestLastRound(Request request, int nextRequestID){
         openRequests.remove(request);
         currentRequestID = nextRequestID;
     }
+    
     public void addSimulatedRequest(Request request){
         this.simulatedRequests.add(request);
     }
+    
     public List<Request> getSimulatedRequests(){
         return simulatedRequests;
     }
+    
     public void addOpenSimulatedRequest(Request request){
         this.openSimulatedRequests.add(request);
     }
+    
     public void setNewOpenSimulatedRequest(){
         Request request = simulatedRequests.getLast();
         addOpenSimulatedRequest(request);
@@ -207,9 +222,11 @@ public class Vehicle {
         currentRequestID = request.getID();
         request.setAssignedVehicle(ID);
     }
+    
     public List<Request> getOpenSimulatedRequests(){
         return openSimulatedRequests;
     }
+    
     public void closeSimulatedRequest(Request request){
         openSimulatedRequests.remove(request);
         if (!openSimulatedRequests.isEmpty()){

@@ -10,14 +10,14 @@ import java.util.Map;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.kuleuven.engineering.*;
+import org.kuleuven.engineering.Warehouse;
 import org.kuleuven.engineering.graph.Graph;
 import org.kuleuven.engineering.graph.GraphNode;
-import org.kuleuven.engineering.types.Location;
-import org.kuleuven.engineering.types.Stack;
 import org.kuleuven.engineering.types.Bufferpoint;
-import org.kuleuven.engineering.types.Vehicle;
+import org.kuleuven.engineering.types.Location;
 import org.kuleuven.engineering.types.Request;
+import org.kuleuven.engineering.types.Stack;
+import org.kuleuven.engineering.types.Vehicle;
 
 public class DataReader {
     public static Warehouse read(String filePath) {

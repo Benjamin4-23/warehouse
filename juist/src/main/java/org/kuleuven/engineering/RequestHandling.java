@@ -96,11 +96,6 @@ public class RequestHandling {
         return true;
     }
 
-
-
-
-    
-
     // helper functions
     private boolean leegVehicle(Vehicle vehicle, Location startLocation, double timeAfterMove, double time, Request request, HashMap<Integer, Integer> stackIsUsedUntil, HashMap<Integer, Integer> waitForRequestFinish) {
         boolean vehicleGotRequestBox = hasBoxInOpenRequests(vehicle);
